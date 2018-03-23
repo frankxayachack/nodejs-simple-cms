@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{> admin/head}}
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+
+    <a class="navbar-brand" href="/">Home Page</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+
+        {{> admin/admin-side-nav}}
+    
+        {{> admin/admin-nav-bar}}
+
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+
+      {{> home/form-msgs }}
+
+      {{{body}}}
+
+      
+    </div>
+    <!-- /.container-fluid-->
+    
+      {{> admin/footer}}
+
+  </div>
+</body>
+
+</html>
